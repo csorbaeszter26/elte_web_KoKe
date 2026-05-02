@@ -77,7 +77,15 @@
                                         <p class="card-text">2016 óta építkező zenekar, nevét Tolsztoj egyik figurájáról kapta – dalaik csendes erővel húznak be. Atmoszférikus, érzelmes utazás, ami élőben egyszerre intim és katartikus.</p>
                                         <div class="buttons">
                                             <input id="ticketnumber" type="number" name="ticketnumber" value="0" min="0" max="10">
-                                            <button class="btn btn-dark">Vásárlás</button>
+                                            <div class="collapse" id="sikerUzenet">
+                                                <div class="alert alert-success d-flex align-items-center mt-3" role="alert">
+                                                    
+                                                    <div>
+                                                    Sikeres vásárlás! A jegyedet rögzítettük.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#sikerUzenet" aria-expanded="false" aria-controls="sikerUzenet">Vásárlás</button>
                                         </div>
                                     </div>
                                 </div>
