@@ -41,6 +41,7 @@ article{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .toptitletext h1, .toptitletext h3{
     color: white;
@@ -81,6 +82,9 @@ nav li:hover{
 }
 nav li:hover a{
     color: white;
+}
+nav li:hover img.logo{
+    content: url("pictures/LOGObuttonWhiteC.png");
 }
 nav .newsletter{
     margin-left: auto;
@@ -564,7 +568,7 @@ aside.contactpartners{
 
 
 
-/* reszponzivitás - mobil */
+/* 1. reszponzivitás - mobil */
 
 @media (max-width: 800px) {
     /*header*/
@@ -578,6 +582,9 @@ aside.contactpartners{
     .toptitleimg{
         height: 30vh;
         flex: none;
+    }
+    .toptitletext{
+        padding: 1rem;
     }
     /*nav*/
     nav{
