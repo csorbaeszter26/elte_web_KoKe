@@ -1,0 +1,817 @@
+/* -> konstans minden oldalon: */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-size: cover;
+    /*background-color: black;*/
+    background-image: url("/pictures/kulterhatter.png");
+    font-size: 1rem;
+}
+header{
+    height: 58vh;
+}
+article{
+    /*background-image: url("/pictures/kulterhatter.png");*/
+    background-size: cover;
+    background-position: center;
+}
+
+/* - kép és szöveg a heaíderben: */
+.toptop{
+    height: 5vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.toptop img{
+    margin-left: auto;
+    width: auto;
+    height: 80%;
+}
+.toptitle{
+    height: 50vh;
+    display: flex;
+}
+.toptitletext{
+    flex: 1;
+    background-color: #110933;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.toptitletext h1, .toptitletext h3{
+    color: white;
+}
+.toptitleimg{
+    flex: 2;
+    width: 100%;
+    background-image: url("/pictures/logo.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* - navos dolgok*/
+nav{
+    position: sticky;
+    top: 0;
+    height: 11vh;
+    display: flex;
+    overflow: hidden;
+    z-index: 9999;
+}
+nav ul{
+    list-style-type: none;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+nav li {
+    display: flex;
+    align-items: center;
+    height: 98%;
+}
+nav li:hover{
+    background-color: black;
+}
+nav li:hover a{
+    color: white;
+}
+nav .newsletter{
+    margin-left: auto;
+}
+nav img{
+    height: 100%;
+    /*background-color: black;*/
+    width: auto;
+    padding: 0;
+}
+nav li a {
+    color: black;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 0.9rem;
+    justify-content: center;
+    box-sizing: border-box;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.9rem;
+}
+nav .act{
+    background-color: black;
+    color: white;
+}
+nav .act a{
+    color: white;
+    list-style-type: none;
+}
+
+
+
+/* - footer: */
+footer{
+    height: 23vh;
+    background-color: #110933;
+}
+footer .footfirst{
+    height: 19vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+}
+footer .footfirst .open{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+footer .footfirst .contact{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+footer .footfirst .contact p {
+    text-align: left;
+    width: fit-content;
+}
+footer .footfirst .sources{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+footer .footsecond{
+    height: 4vh;
+    background-color: white;
+    display: flex;
+    
+}
+footer .footsecond .made{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .footsecond .made p{
+    padding: 1.25rem;
+}
+footer .footsecond .inform{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .footsecond .inform a{
+    padding: 1.25rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* -> fő tartalmak: */
+/* - index.html */
+.intro {
+    display: flex;
+    width: 100%;
+    padding: 1.25rem;
+    gap: 1.6rem;
+    
+}
+.introtext{
+    flex: 1;
+    font-size: 1.8rem;
+    background-color: #110933;
+    padding: 1.8rem;
+}
+.introtextinner{
+    padding: 1.25rem;
+    background-color: #CFC1B8;
+}
+.introtext ul{
+    margin: 0.9rem 0 0.9rem 2.5rem;
+}
+.intropics{
+    flex: 1;
+    /*background-color: black;*/
+    align-items: center;
+    justify-content: center;
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+#myCarousel{
+    width: 100%;
+}
+.intropics .item img{
+    width: 100%;
+    height: auto;
+}
+
+/*heti progi*/
+.weeklytitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 10vh;
+}
+
+.weeklytable{
+    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+}
+
+.programtable{
+    color: white;
+    height: 80%;
+    min-width: 50%;
+}
+.programtable td {
+    border: 0.3rem solid #160d3e;
+    padding: 0.6rem;
+    font-size: 2vh;
+    
+
+}
+.programtable summary{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.when{
+    background-color: #160d3e;
+    color: white;
+    border: 0.3rem solid black;
+}
+
+
+/* - program.html */
+.honap {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding: 2vh;
+}
+#myTab{
+    color: white;
+    margin-left: 13vh;
+    margin-right: 13vh;
+}
+#myTab .nav-link{
+    list-style-type: none;
+    font-size: 2.5rem;
+    color: white;
+}
+#myTab .nav-link.active{
+    background-color: #110933 !important;
+}
+#disabled-tab{
+    opacity: 0.4;
+}
+.honap h1, .honap hr{
+    color: white;
+    margin-left: 18vh;
+    margin-right: 18vh;
+}
+.honap h2{
+    color: white;
+    margin-bottom: 4vh;
+    margin-top: 6vh;
+    margin-left: 18vh;
+    margin-right: 18vh;
+}
+.honap .card{
+    padding: 0.9rem;
+    max-width: 103rem !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.25rem;
+   
+}
+.honap .card-title{
+    font-size: 2.2rem;
+    margin-bottom: 0.6rem;
+}
+.honap .card-text{
+    font-size: 1.4rem;
+    margin-top: 0.6rem;
+    flex: 1;
+}
+.honap img{
+    height: 28vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.honap .card-body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.honap .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: auto;
+    gap: 0.6rem;
+    font-size: 1.6rem;
+}
+.honap .buttons .btn{
+    font-size: 1.6rem;
+    background-color: #110933;
+
+}
+.honap .card-body hr{
+    border: 0.12rem solid #110933;
+    margin-left: 0;
+    width: 100%;
+    opacity: 0.8;
+}
+.honap .cardtwo{
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+    height: 100%;
+}
+
+
+/* - contact.html */
+.bigcontact{
+    width: 100%;
+    overflow: hidden;
+}
+.contactinf{
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+aside.contactpartners{
+    float: right;
+    width: 30%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 1.8rem;
+    color: white;
+}
+.contactpartners hr{
+    color: white;
+    height: 0.12rem;
+    opacity: 100%;
+    width: 100%;
+}
+
+.partner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: white;
+    text-align: justify;
+    font-size: 1.25rem;
+}
+
+.menus{
+    display: flex;
+    flex-direction: row;
+    gap: 3.1rem;
+    border: 0.25rem dotted white;
+    padding: 1.25rem;
+    margin: 1.25rem;
+    justify-content: center;
+}
+.menus a{
+    font-size: 2.18rem;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+.osszcontact {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 2.5rem;
+    margin: 2.5rem;
+}
+.osszcontact h2{
+    font-size: 4rem;
+}
+.osszcontact p, .osszcontact a{
+    font-size: 1.5rem;
+}
+.osszcontact img{
+    max-width: 50%;
+    height: auto;
+    object-fit:cover;
+    padding: 1.25rem 1.25rem;
+}
+
+.nyitvaeler{
+    display: flex;
+    flex-direction: row;
+    
+}
+.nyitvaeler .osszcontact{
+    flex-direction: column;
+    flex: 1;
+}
+
+.itallap{
+    margin: 1.25rem;
+    border-collapse: collapse;
+    font-size: 1.5rem;
+}
+.itallap th, .itallap td{
+    border: 0.06rem solid black;
+    padding: 0.6rem 0.9rem;
+    text-align: left;
+}
+.itallap th{
+    background-color: #110933;
+    color: white;
+}
+.itallap tr:hover {
+    background-color: #e4e2e2;
+}
+.itallapdivje{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1.25rem;
+}
+.contacttext{
+    width: 100%;
+}
+
+
+
+/* newsletter.html */
+
+.newsletter-cont{
+    background-color: white;
+    margin: 5.6rem;
+    padding: 5.6rem;
+    border: 0.12rem solid #ccc;
+}
+
+.newsletter-cont h1{
+    font-size: 300%;
+    margin-bottom: 3.1rem;
+}
+.newsletter-cont label{
+    font-size: 200%;
+}
+
+.newsletter-f-c{
+    display: flex;
+    gap: 8.1rem;
+    margin-bottom: 1.25rem;
+}
+
+.newsletter-f-right, .newsletter-f-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem;
+}
+.inputs{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.93rem;
+}
+.inputs input{
+    flex: 1;
+    padding: 0.3rem;
+    border: 0.06rem solid #000;
+}
+.radios{
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+.radios span{
+    font-size: 200%;
+}
+.radio-options{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3.12rem;
+}
+.newsletter-f-right textarea{
+    width: 100%;
+    border: 0.06rem solid #000;
+    margin-top: 0.62rem;
+    resize: vertical;
+}
+.newsletter-f-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 1.25rem;
+    gap: 1.25rem;
+}
+.consent{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+.newsletter-f-buttons{
+    display: flex;
+    gap: 0.6rem;
+}
+.btn-submit{
+    background-color: #1a1a1a;
+    color: white;
+    padding: 0.5rem 1.56rem;
+    border: none;
+    cursor: pointer;
+    font-size: 130%;
+}
+.btn-reset{
+    background-color: #e0e0e0;
+    color: black;
+    padding: 0.5rem 1.56rem;
+    border: 0.06rem solid #999;
+    cursor: pointer;
+    font-size: 130%;
+}
+
+
+
+
+
+
+
+/* reszponzivitás - mobil */
+
+@media (max-width: 800px) {
+    /*header*/
+    header {
+        height: auto;
+    }
+    .toptitle{
+        flex-direction: column;
+        height: auto;
+    }
+    .toptitleimg{
+        height: 30vh;
+        flex: none;
+    }
+    /*nav*/
+    nav{
+        height: auto;
+        position: static;
+    }
+    nav ul{
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding: 1rem 0;
+    }
+    nav li{
+        height: auto;
+        width: 100%;
+        justify-content: center;
+    }
+    nav img.logo{
+        height: 4rem;
+        width: auto;
+        padding: 0.5rem 0;
+    }
+    nav li a{
+        font-size: 1.2rem;
+        padding: 0.8rem;
+    }
+    nav .newsletter{
+        margin-left: 0;
+    }
+    /*footer*/
+    footer{
+        height: auto;
+    }
+    footer .footfirst{
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 1rem;
+        gap: 2rem;
+        text-align: center;
+    }
+    footer .footfirst .contact p {
+        text-align: center;
+        width: 100%;
+    }
+    footer .footsecond{
+        flex-direction: column;
+        height: auto;
+    }
+    /*index.html*/
+    .intro{
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .introtext{
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+    .weeklytable{
+        height: auto;
+        padding: 0.5rem;
+    }
+    .programtable{
+        width: 100%;
+        min-width: 100%;
+        font-size: 0.9rem;
+    }
+    .programtable td{
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+    /*program.html*/
+    .honap{
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        padding: 1rem;
+    }
+    #myTab{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        justify-content: center;
+    }
+    #myTab .nav-link{
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+    .honap h1, .honap hr, .honap h2{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        text-align: center;
+    }
+    .honap h2{
+        font-size: 1.8rem;
+        margin-top: 3vh;
+        margin-bottom: 2vh;
+    }
+    .honap .cardtwo{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .honap img{
+        height: auto;
+        max-height: 40vh;
+    }
+    .honap .card-title{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .honap .card-text{
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .honap .buttons{
+        align-items: center;
+        width: 100%;
+    }
+    .honap .buttons input{
+        width: 100%;
+        text-align: center;
+    }
+    .honap .buttons .btn{
+        width: 100%;
+        padding: 0.8rem;
+    }
+    /*contact.html*/
+    .contactinf, aside.contactpartners{
+        float: none;
+        width: 100%;
+    }
+    .menus{
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .menus a{
+        font-size: 1.2rem;
+    }
+    .osszcontact{
+        flex-direction: column;
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    .osszcontact h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .osszcontact img{
+        max-width: 100%;
+        padding: 1rem 0;
+    }
+    .nyitvaeler{
+        flex-direction: column;
+    }
+    .nyitvaeler .osszcontact{
+        margin: 1rem;
+    }
+    .itallapdivje{
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin-top: 1rem;
+    }
+    .itallap {
+        display: block;
+        width: 100%;
+        margin: 0;
+        font-size: 0.9rem;
+    }
+    .itallap th, .itallap td{
+        padding: 0.4rem;
+    }
+    aside.contactpartners{
+        padding: 1rem;
+        
+    }
+    aside.contactpartners h1 {
+        font-size: 1.8rem;
+    }
+    .partner {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+    /*newsletter.html*/
+    .newsletter-cont{
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    .newsletter-cont h1{
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    .newsletter-cont label, .radios span{
+        font-size: 1.2rem;
+    }
+    .newsletter-f-c {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .newsletter-f-right, .newsletter-f-left{
+        margin: 0;
+        width: 100%;
+    }
+    .inputs{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    .inputs input{
+        width: 100%;
+        padding: 0.8rem;
+    }
+    .radio-options{
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+    .newsletter-f-right textarea{
+        min-height: 10rem;
+    }
+    .newsletter-f-bottom{
+        align-items: center;
+        text-align: center;
+    }
+    .consent{
+        align-items: flex-start;
+        text-align: left;
+    }
+    .newsletter-f-buttons{
+        flex-direction: column;
+        width: 100%;
+    }
+    .btn-submit, .btn-reset{
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+}

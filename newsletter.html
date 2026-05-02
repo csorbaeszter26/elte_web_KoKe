@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KoKe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+    <body>
+        <main>
+            <header>
+                <div class="toptop">
+                    <img src="/pictures/iconsC.png">
+                </div>
+                <div class="toptitle">
+                    <div class="toptitleimg">
+                    </div>
+                    <div class="toptitletext">
+                        <h1>Téged is vár a Koncert Kert!</h1>
+                        <h3>Három színpad, ezer hangulat, egy közös: jó itt lenni.</h3>
+                    </div>
+                </div>
+            </header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <img src="pictures/LOGObuttonC.png" alt="KoKe kattintható logója a főoldalra" class="logo"> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="program.html">Programok</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Kapcsolat</a>
+                    </li>
+                    <li class="act newsletter">
+                        <a href="newsletter.html">Hírlevél</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <article>
+                <div class="newsletter-cont">
+                    <h1>Iratkozz fel!</h1>
+                    <form class="newsletter-form">
+                        <div class="newsletter-f-c">
+                            <div class="newsletter-f-left">
+                                <div class="inputs">
+                                    <label for="email">Email cím:* </label>
+                                    <input type="text" id="email" required>
+                                </div>
+                                <div class="inputs">
+                                    <label for="kname">Keresztnév: </label>
+                                    <input type="text" id="kname">
+                                </div>
+
+                                <div class="radios">
+                                    <span>Kedvenc vibe: </span>
+                                    <div class="radio-options">
+                                        <label><input type="radio" name="vibe" value="nagyterem"> Nagyterem</label>
+                                        <label><input type="radio" name="vibe" value="kisterem"> Kisterem</label>
+                                        <label><input type="radio" name="vibe" value="under"> Under</label>
+                                        <label><input type="radio" name="vibe" value="mind"> Mindegyik</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="newsletter-f-right">
+                                <label for="opinion">Ha voltál már nálunk, oszd meg a véleményed!</label>
+                                <textarea id="opinion" rows="6"></textarea>
+                            </div>
+
+                        </div>
+
+                        <div class="newsletter-f-bottom">
+                            <div class="consent">
+                                <input type="checkbox" id="consent" required>
+                                <label for="consent">Hozzájárulok, hogy a KoKe hírlevelet küldjön. Tudom, hogy bármikor leiratkozhatok.</label>
+                            </div>
+                            <div class="newsletter-f-buttons">
+                                <button type="submit" class="btn-submit">Feliratkozom</button>
+                                <button type="reset" class="btn-reset">Reset</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </article>
+
+            <footer>
+                <div class="footfirst">
+                    <div class="open">
+                        <p>Nyitvatartás:  </p>
+                        <table>
+                            <tr><td>H: </td><td>ZÁRVA</td></tr>
+                            <tr><td>K: </td><td>15:00 - 0:00</td></tr>
+                            <tr><td>Sze: </td><td>15:00 - 0:00</td></tr>
+                            <tr><td>Cs: </td><td>15:00 - 02:00</td></tr>
+                            <tr><td>P: </td><td>15:00 - 02:00</td></tr>
+                            <tr><td>Szo: </td><td>15:00 - 02:00</td></tr>
+                            <tr><td>V: </td><td>15:00 - 0:00</td></tr>
+                        </table>
+                    </div>
+                    <div class="contact">
+                        <p>Elérhetőség:</p>
+                        <p>+36 1 234 5678</p>
+                        <p>koke@koncertkert.hu</p>
+                        <p>Budapest, Pázmány Péter stny. 1C, 1117</p>
+                    </div>
+                    <div class="sources">
+                        <p>Források:</p>
+                        <a href="https://www.bohemianbetyars.hu/hu">https://www.bohemianbetyars.hu/hu</a>
+                        <a href="https://www.elefantofficial.com/">https://www.elefantofficial.com/</a>
+                        <a href="https://open.spotify.com/">https://open.spotify.com/</a>
+                    </div>
+                </div>
+                <div class="footsecond">
+                    <div class="made">
+                        <p>Készítette: Csorba Eszter, D1UGIS</p>
+                    </div>
+                    <div class="inform">
+                        <a>Adatkezelési Tájékoztató</a>
+                        <a>Felhasználói Feltételek</a>
+                        <a>Házirend</a>
+                    </div>
+                </div>
+            </footer>
+
+        </main>
+    </body>
+</html>
